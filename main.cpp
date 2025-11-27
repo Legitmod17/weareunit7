@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	setlocale(LC_ALL, "russian");
+	setlocale(LC_ALL, "");
 
 	cout << "[+] Календарь" << endl;
 	cout << "[1] Январь" << endl;
@@ -18,6 +18,7 @@ int main() {
 	cout << "[11] Ноябрь" << endl;
 	cout << "[12] Декабрь" << endl;
 
+
 	int month, day;
 	cout << "Выберите месяц: ";
 	cin >> month;
@@ -25,10 +26,10 @@ int main() {
 
 	string monthName;
 
-	switch (month) { 
+	switch (month) {
 	case 1: {
 		cout << "Выбран месяц Январь\n";
-		monthName = "Января";
+		monthName = "Январь";
 		break;
 	}
 	case 2: {
@@ -41,5 +42,58 @@ int main() {
 		monthName = "Март";
 		break;
 	}
+	case 4: {
+		cout << "Выбран месяц Апрель\n";
+		monthName = "Апрель";
+		break;
+	}
+	case 5: {
+		cout << "Выбран месяц Май\n";
+		monthName = "Май";
+		break;
+	}
+	case 6: {
+		cout << "Выбран месяц Июнь\n";
+		monthName = "Июнь";
+		break;
+	}
+	case 7: {
+		cout << "Выбран месяц Июль\n";
+		monthName = "Июль";
+		break;
+	}
+	case 8: {
+		cout << "Выбран месяц Август\n";
+		monthName = "Август";
+		break;
+	}
+	case 9: {
+		cout << "Выбран месяц Сентябрь\n";
+		monthName = "Сентябрь";
+		break;
+	}
+	case 10: {
+		cout << "Выбран месяц Октябрь\n";
+		monthName = "Октябрь";
+		break;
+	}
+	case 11: {
+		cout << "Выбран месяц Ноябрь\n";
+		monthName = "Ноябрь";
+		break;
 
+	}
+
+	case 12: {
+		cout << "Выбран месяц Декабрь\n";
+		monthName = "Декабрь";
+		break;
+	}
+	default:
+		cout << "Неправильно введён номер месяца!\n";
+		return 0;
+
+
+
+	}
 }
